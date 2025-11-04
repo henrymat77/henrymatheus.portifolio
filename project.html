@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Henry Matheus</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .projetos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .projeto-card {
+      border: 1px solid green;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #111;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .projeto-card:hover {
+      transform: scale(1.05);
+      background-color: #1a1a1a;
+    }
+
+    .projeto-card h3 {
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    .projeto-card p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .em-breve {
+      font-style: italic;
+      color: #888;
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0c8c0c;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="project.html">Projetos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Meus Projetos</h1>
+      <p>
+        Aqui você encontrará os projetos que estou desenvolvendo e estudos que estou realizando na área de tecnologia.
+      </p>
+
+      <div class="projetos-container">
+        <div class="projeto-card">
+          <h3>🚧 Em breve: Meu primeiro projeto Front-End</h3>
+          <p>
+            Atualmente estou aprendendo HTML, CSS e JavaScript, e em breve irei publicar meu primeiro site completo.
+          </p>
+          <p class="em-breve">Status: Em desenvolvimento</p>
+        </div>
+
+        <div class="projeto-card">
+          <h3>💡 Ideias futuras</h3>
+          <p>
+            Tenho planos de desenvolver pequenos sistemas e páginas voltadas para estudos e portfólio. 
+            Essa seção será atualizada à medida que eu evoluir nos meus aprendizados.
+          </p>
+          <p class="em-breve">Fique ligado!</p>
+        </div>
+      </div>
+
+      <a href="contact.html" class="btn">Entre em contato</a>
+    </main>
+
+    <footer>
+      <p>© 2025 Henry Matheus — Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>

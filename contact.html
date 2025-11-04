@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Henry Matheus</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid green;
+      border-radius: 5px;
+      background-color: #111;
+      color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #0c8c0c;
+      transform: scale(1.03);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Sobre mim</a></li>
+        <li><a href="project.html">Projetos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Entre em contato</h1>
+      <p>Quer conversar sobre tecnologia, projetos ou oportunidades? Envie uma mensagem abaixo!</p>
+
+      <form action="https://formsubmit.co/henrymatheus.hm49@gmail.com" method="post">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar mensagem</button>
+      </form>
+
+      <div class="social-links">
+        <a href="https://wa.me/21988113879" target="_blank">
+          <img src="img/whatsapp-icon-logo.svg" alt="WhatsApp">
+        </a>
+        <a href="https://www.linkedin.com/in/henry-matheus-25928321a/" target="_blank">
+          <img src="img/linkedin-1.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/henry_mth77?igsh=eDgzNHZkYng0aWk4" target="_blank">
+          <img src="img/instagram-1.svg" alt="Instagram">
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Henry Matheus — Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
